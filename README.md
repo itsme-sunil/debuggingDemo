@@ -4,8 +4,8 @@ Short exercise to that tests how the 'this' operator behaves in the global conte
 
 ## Getting Started
 
-1. Fork the repo to your github.
-2. Clone it to your local machine.
+1. Fork the repo to your github
+2. Clone it to your local machine
 
 ```bash
 git clone <your_forked_repo_url>
