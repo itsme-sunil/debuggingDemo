@@ -1,5 +1,14 @@
 require('./index');
 
+/*
+ *
+ *
+ * INSTRUCTIONS:
+ *  - There are 5 tests that you will need to make pass.
+ *  - FILL_ME_IN -> fill in the value you expect it to be
+ *  - FIX_ME -> refactor that line of code to make the test pass.
+ */
+
 describe('this and the global context', () => {
 
   it('can reference the window or global object', () => {
