@@ -1,0 +1,25 @@
+{
+  "name": "debugging-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "live-server"
+  },
+  "jest": {
+    "runner": "jest-runner-mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-html-reporter": "^3.3.0",
+    "jest-runner-mocha": "^0.6.0",
+    "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
