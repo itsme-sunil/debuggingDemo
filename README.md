@@ -1,6 +1,6 @@
 # Debugging demo with 'this' & function-binding
 
-Short exercise to that tests how the 'this' operator behaves in the global context and when unbounded/bound to an object or function.
+Short exercise to test how the 'this' operator behaves in the global context and when unbounded/bound to an object or function.
 
 ## Getting Started
 
