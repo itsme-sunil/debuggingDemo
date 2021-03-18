@@ -12,7 +12,7 @@ require('./index');
 describe('this and the global context', () => {
 
   it('can reference the window or global object', () => {
-    expect(window.color).toBe(/* FILL_ME_IN */);
+    expect(window.color).toBe('red');
   })
 
   it('can be a bit tricky', () => {
@@ -28,7 +28,7 @@ describe('this and the global context', () => {
         };
     }
     var obj = new WhoIsThis();
-    expect(obj.display()).toBe(/* FILL_ME_IN */);
+    expect(obj.display()).toBe(300);
   });
 });
 
@@ -42,12 +42,12 @@ describe('this and method invocation', () => {
   }
 
   it('refers to an object when used inside the invocation of a method', () => {
-    expect(bike.getBrand()).toBe(/* FILL_ME_IN */);
+    expect(bike.getBrand()).toBe('Specialized');
   })
 
   it('can be bound to a specific object', () => {
 
-    var brand = bike.getBrand; // FIX_ME
+    var brand = bike.getBrand.bind(bike);
 
     expect(brand()).toBe('Specialized');
   })
@@ -58,7 +58,7 @@ describe('this and method invocation', () => {
       brand: 'Cannondale'
     }
 
-    var brand = bike.getBrand(anotherBike); // FIX_ME
+    var brand = bike.getBrand.bind(anotherBike);
 
     expect(brand()).toBe('Cannondale');
   })
